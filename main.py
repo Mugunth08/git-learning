@@ -1,5 +1,5 @@
 def main():
-    print("Hello GenAI Developer")
+    print("Hello GenAI")
 
 
 if __name__ == "__main__":
