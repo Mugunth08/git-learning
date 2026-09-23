@@ -1,5 +1,5 @@
 def main():
-    print("Hello from git-learning!")
+    print("Hello GenAI Developer")
 
 
 if __name__ == "__main__":
