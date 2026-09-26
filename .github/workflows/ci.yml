@@ -17,5 +17,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Run Python
-        run: python main.py
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run test
+        run: pytest
