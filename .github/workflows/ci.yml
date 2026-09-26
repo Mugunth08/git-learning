@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install pytest
-        run: pip install pytest
+      - name: Install uv   # like uv init .
+        uses: astral-sh/setup-uv@v7
 
-      - name: Run test
-        run: pytest
+      - name: Install dependencies # like uv sync
+        run: uv sync
+
+      - name: Run tests # not installing like pip install pytest instead direct running because we have uv sync
+        run: uv run pytest
